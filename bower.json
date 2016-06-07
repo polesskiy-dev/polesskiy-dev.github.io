@@ -1,0 +1,20 @@
+{
+  "name": "polesskiy-dev.github.io",
+  "homepage": "https://github.com/polesskiy-dev/polesskiy-dev.github.io",
+  "authors": [
+    "polesskiy-dev <e34dream@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
