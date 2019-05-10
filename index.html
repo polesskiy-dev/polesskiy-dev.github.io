@@ -1,189 +1,427 @@
 <!DOCTYPE html>
-<html>
-<title></title>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-    <link rel="stylesheet" href="bower_components/bootswatch-dist/css/bootstrap.css">
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+  
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+  
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  h1:hover {
+      background-color: #757575;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #9CB770;
+  }
+  h2:hover {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      /*font-weight: bold;*/
+  }
+  dd {
+      margin-left: 17%;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+  
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #397249;
+  }
+  a:hover, a:active {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+  
+  table {
+      width: 100%;
+  }
+  </style>
 </head>
 <body>
-<div class="container">
-
-    <div class="navbar navbar-default">
-        <div class="navbar-header"></div>
-
-    </div>
-    <!--personal information-->
-    <section>
-        <article class="row">
-            <div class="col-xs-9">
-                <h1>Polesskiy Artyom Vitalyevich</h1>
-            </div>
-            <div class="col-xs-3">
-                <a href="mailto:polesskiy.dev@gmail.com">e-mai: polesskiy.dev@gmail.com</a><br>
-                <a href="tel:+380 67 708 90 15">call me: +380 67 708 90 15</a><br>
-                <a href="skype:tema.poless">skype: tema.poless</a><br>
-                <!--29.06.1991-->
-            </div>
-        </article>
-        <hr>
-    </section>
-
-    <!--abilities-->
-    <section>
-        <article class="row">
-            <div class="col-xs-3">
-                <h2><i>Education</i></h2>
-                <hr>
-            </div>
-            <div class="col-xs-9">
-                <h3>National Technical University "Kharkiv Polytechnic Institute"</h3>
-                <i>Bachelor of Applied Mathematics degree</i>
-
-                <h4>Completed cources</h4>
-                <table class="table">
-                    <tbody>
-                    <tr>
-                        <td>Success</td>
-                        <td>English for IT</td>
-                    </tr>
-                    <tr>
-                        <td>Just English it</td>
-                        <td>IT English</td>
-                    </tr>
-                    <tr>
-                        <td>Web-Manufacture</td>
-                        <td>JS training</td>
-                    </tr>
-                    <tr>
-                        <td>Codersterra</td>
-                        <td>NodeJS practice</td>
-                    </tr>
-                    </tbody>
-                </table>
-
-                <h4>Now going cources</h4>
-                <table class="table">
-                    <tbody>
-                    <tr>
-                        <td>EPAM</td>
-                        <td>Java training</td>
-                    </tr>
-                    <tr>
-                        <td>MongoDB university</td>
-                        <td>M101JS</td>
-                    </tr>
-                    </tbody>
-                </table>
-
-            </div>
-        </article>
-
-        <article class="row">
-            <div class="col-xs-3">
-                <h2><i>Work experience</i></h2>
-                <hr>
-            </div>
-            <div class="col-xs-9">
-                <h3>MaxLab: Software engineer</h3>
-                <i>(01.2014-02.2016)</i><br>
-                Basically, I developed firmware in ANSI C. The main purpose of the products was the<br>
-                Internet of Things and automated control systems. In addition, I developed communication<br>
-                terminals in Java (JavaFX) and Android. For web interfaces,<br>
-                I used JS + HTML + CSS bundle, Bootstrap Framework and Lua for server-side.<br>
-            </div>
-        </article>
-
-        <!--article class="row">
-            <div class="col-xs-3">
-                <h2><i>Knowledge</i></h2>
-                <hr>
-            </div>
-            <div class="col-xs-3"><h3>Java core</h3></div>
-            <div class="col-xs-3"><h3>ANSI C</h3></div>
-            <div class="col-xs-3"><h3>JavaScript core</h3></div>
-        </article-->
-
-        <article class="row">
-            <div class="col-xs-3">
-                <h2><i>Skills</i></h2>
-                <hr>
-            </div>
-            <div class="col-xs-9">
-                <table class="table">
-                    <tbody>
-                    <tr>
-                        <td>Java</td>
-                        <td>Servlets API, Spring MVC, JPA, JUnit, JavaFX</td>
-                    </tr>
-                    <tr>
-                        <td>JS</td>
-                        <td>Nodejs, express, socket.io, passport.js, mongoose, jasmine, qunit, npm, jquery
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>C</td>
-                        <td>AVR8, AVR X-mega, PIC24, TI CortexM4, Cmake
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lua</td>
-                        <td>eLua
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Web</td>
-                        <td>HTML, CSS, Bootstrap, Bower</td>
-                    </tr>
-                    <tr>
-                        <td>DB</td>
-                        <td>MySQL, MongoDB</td>
-                    </tr>
-                    <tr>
-                        <td>CS</td>
-                        <td>OOP principles, Abstract data types</td>
-                    </tr>
-                    <tr>
-                        <td>OS</td>
-                        <td>Ubuntu, Raspbian (Embedded Linux)</td>
-                    </tr>
-                    <tr>
-                        <td>IDE</td>
-                        <td>Idea, WebStorm, CLion, Visual Studio</td>
-                    </tr>
-                    <tr>
-                        <td>Other</td>
-                        <td>Git, Mantis BTS, Maven</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </article>
-
-        <article class="row">
-            <div class="col-xs-3">
-                <h2><i>Languages</i></h2>
-                <hr>
-            </div>
-            <div class="col-xs-9">
-                English intermediate.<br>
-                Ukrainian native.<br>
-                Russian native.<br>
-            </div>
-        </article>
-
-        <article class="row">
-            <div class="col-xs-3">
-                <h2>Personal qualities</h2>
-                <hr>
-            </div>
-            <div class="col-xs-9">
-                Analytical and communication skills.<br>
-                Capable of learning and teamwork.<br>
-                Purposefulness, sociability, responsibility.<br>
-            </div>
-        </article>
-    </section>
-
-
-</div>
+<h1 id="artem-polisskyi">Artem Polisskyi</h1>
+<h1 id="about-me">About me</h1>
+<p>Software Engineer, 27 y.o.</p>
+<p>education: bachelor of applied mathematics</p>
+<p>email: polesskiy.dev@gmail.com</p>
+<h1 id="summary-of-qualifications">Summary of Qualifications</h1>
+<p>Software engineer with 5.5 years of experience in software development.</p>
+<p>Background includes experience as full-stack web developer and embedded solutions developer.</p>
+<p>I have understanding of software engineering principles and concepts, OOP/OOD, various algorithms and approaches. I’m aimed on developing robust, scalable and maintainable applications. Self-motivated person with passion to learning new technologies and concepts.</p>
+<h1 id="main-skills">Main skills</h1>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Languages/ Technologies</th>
+<th>Frameworks</th>
+<th>Code quality tools</th>
+<th>Build/Deployment</th>
+<th>Methodologies</th>
+<th>Documentation tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OOP/OOD</td>
+<td>React</td>
+<td>Karma</td>
+<td>AWS</td>
+<td>Scrum</td>
+<td>ESDoc</td>
+</tr>
+<tr class="even">
+<td>Basic algorithms/Data structures</td>
+<td>Redux</td>
+<td>Mocha</td>
+<td>Docker</td>
+<td>Agile</td>
+<td>APIDoc</td>
+</tr>
+<tr class="odd">
+<td>Patterns (GoF, Functional)</td>
+<td>Rxjs</td>
+<td>Chai</td>
+<td>Travis CI</td>
+<td>Waterfall</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>JavaScript/ES7</td>
+<td>Express</td>
+<td>Enzyme</td>
+<td>NPM</td>
+<td>Feature Driven</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>HTML5</td>
+<td>Mongoose.js</td>
+<td>Eslint</td>
+<td>Webpack</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>CSS3/Less/Sass</td>
+<td>Sequelize</td>
+<td>Prettier</td>
+<td>Babel</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Node.js</td>
+<td>Socket.io</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>SQL</td>
+<td>Bootstrap</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>MongoDB</td>
+<td>MaterialUI</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="frontend-crm-for-telecom-operator">Frontend: CRM for Telecom operator</h2>
+<h3 id="project-description">Project description</h3>
+<p>Bunch of UI components and widgets for CRM</p>
+<h3 id="customer">Customer</h3>
+<p>Spain</p>
+<h3 id="involvement-duration">Involvement Duration</h3>
+<p>4 months</p>
+<h3 id="project-role">Project role</h3>
+<p>Developer</p>
+<h3 id="responsibilities">Responsibilities</h3>
+<p>Developing UI, Unit testing</p>
+<h3 id="project-team-size">Project Team Size</h3>
+<p>4 team members</p>
+<h3 id="tools-technologies">Tools &amp; Technologies</h3>
+<p>React, Redux, redux-saga, MaterialUI, mocha, chai, moment, formik, CRA</p>
+<hr />
+<h2 id="backend-backup-platform-reselling-integration">Backend: Backup platform reselling integration</h2>
+<h3 id="project-description-1">Project description</h3>
+<p>Bunch of microservices integrated to different platforms intended to allow customers purchasing backup services. Project is developed on Typescript/Nodejs/PostgreSQL/React stack with ~90% test coverage. My role was developing microservices and investigating platforms to integrate them in.</p>
+<h3 id="customer-1">Customer</h3>
+<p>US</p>
+<h3 id="involvement-duration-1">Involvement Duration</h3>
+<p>6 months</p>
+<h3 id="project-role-1">Project role</h3>
+<p>Developer, Teamlead deputy</p>
+<h3 id="responsibilities-1">Responsibilities</h3>
+<p>Developing microservices, Deploying, Unit testing, integration to the customer system</p>
+<h3 id="project-team-size-1">Project Team Size</h3>
+<p>7 team members</p>
+<h3 id="tools-technologies-1">Tools &amp; Technologies</h3>
+<p>Nodejs, typescript, express, typeORM, inversifyJS, jest, sinon, mocha, prettier, jwt, passportjs , lodash, postresql</p>
+<hr />
+<h2 id="backend-blockchain-quiz-game">Backend: Blockchain quiz game</h2>
+<h3 id="project-description-2">Project description</h3>
+<p>Online quiz game with video streaming to mobile clients and crypto tokens prize distribution. Microservice architecture. My role was developing microservices for game flow, mostly REST apis.</p>
+<h3 id="customer-2">Customer</h3>
+<p>US</p>
+<h3 id="involvement-duration-2">Involvement Duration</h3>
+<p>2 months</p>
+<h3 id="project-role-2">Project role</h3>
+<p>Developer</p>
+<h3 id="responsibilities-2">Responsibilities</h3>
+<p>Developing microservices, Deploying, Unit testing</p>
+<h3 id="project-team-size-2">Project Team Size</h3>
+<p>4 team members</p>
+<h3 id="tools-technologies-2">Tools &amp; Technologies</h3>
+<p>Nodejs, hapijs, mysql, redis, pusher, rabbitmq, docker, sequelize, jwt, apidoc, mocha, eslint, lodash/fp</p>
+<hr />
+<h2 id="fullstack-blockchain-token-exchange-platform.">Fullstack: Blockchain token exchange platform.</h2>
+<h3 id="project-description-3">Project description</h3>
+<p>See: https://www.orderbook.io, fully secure platform which helps users to exchange tokens. My role was mostly about developing screens flow, complex widgets and server api refactoring.</p>
+<h3 id="customer-3">Customer</h3>
+<p>US</p>
+<h3 id="involvement-duration-3">Involvement Duration</h3>
+<p>6 months</p>
+<h3 id="project-role-3">Project role</h3>
+<p>Developer, Teamlead deputy</p>
+<h3 id="responsibilities-3">Responsibilities</h3>
+<p>Developing screens flow, widgets</p>
+<h3 id="project-team-size-3">Project Team Size</h3>
+<p>8 team members</p>
+<h3 id="tools-technologies-3">Tools &amp; Technologies</h3>
+<p>React, Redux, nodejs, sequelize, redux-saga, react-router, reselect, recompose, redux-forms, momentjs, ant-design, react-intl, lodash/fp, mocha, chai, webpack, es7</p>
+<hr />
+<h2 id="frontend-open-source-pulsetile-react-ui-framework-for-health-care.">Frontend, open-source: PulseTile React UI framework for health care.</h2>
+<h3 id="project-description-4">Project description</h3>
+<p>See: http://ripple.foundation/ and http://showcase.ripple.foundation/, https://github.com/PulseTile/PulseTile-React/tree/develop</p>
+<p>Bunch of React UI components, visualization widgets for health care system</p>
+<h3 id="customer-4">Customer</h3>
+<p>European company</p>
+<h3 id="involvement-duration-4">Involvement Duration</h3>
+<p>6 months</p>
+<h3 id="project-role-4">Project role</h3>
+<p>Developer</p>
+<h3 id="responsibilities-4">Responsibilities</h3>
+<p>Developing React UI framework</p>
+<h3 id="project-team-size-4">Project Team Size</h3>
+<p>4 team members</p>
+<h3 id="tools-technologies-4">Tools &amp; Technologies</h3>
+<p>React, Redux, Rxjs, react-router, reselect, recompose, redux-forms, momentjs, react-bootstrap, redux-observable, lodash/fp, mocha, chai, webpack, es7</p>
+<hr />
+<h2 id="backend-webapp-for-searching-house-repair-service-providers-in-switzerland">Backend: webapp for searching house repair service providers in Switzerland</h2>
+<h3 id="project-description-5">Project description</h3>
+<p>Service which helps customers and service providers find each other. Mostly it’s a standard CRUD api but with realtime notifications for users, ability of action cancellation. This project also has a payment system – Stripe.</p>
+<h3 id="customer-5">Customer</h3>
+<p>Switzerland</p>
+<h3 id="involvement-duration-5">Involvement Duration</h3>
+<p>5 months</p>
+<h3 id="project-role-5">Project role</h3>
+<p>Developer, Teamlead of small backend team</p>
+<h3 id="responsibilities-5">Responsibilities</h3>
+<p>Developing the app, API, deploying on AWS, unit testing</p>
+<h3 id="project-team-size-5">Project Team Size</h3>
+<p>5 team members</p>
+<h3 id="tools-technologies-5">Tools &amp; Technologies</h3>
+<p>Nodejs, expressjs, docker, sequelize, postresql, passportjs, Rxjs, jwt, mocha, lodash/fp, Stripe</p>
+<hr />
+<h2 id="frontend-ddos-attack-protection-project-control">Frontend: ddos attack protection project control</h2>
+<h3 id="project-description-6">Project description</h3>
+<p>Dashboard for ddos attack protection system, like CloudForge etc. App has realtime communications with server.</p>
+<h3 id="customer-6">Customer</h3>
+<p>UK</p>
+<h3 id="involvement-duration-6">Involvement Duration</h3>
+<p>10 months</p>
+<h3 id="project-role-6">Project role</h3>
+<p>Developer</p>
+<h3 id="responsibilities-6">Responsibilities</h3>
+<p>Developing the app, unit testing</p>
+<h3 id="project-team-size-6">Project Team Size</h3>
+<p>7 team members</p>
+<h3 id="tools-technologies-6">Tools &amp; Technologies</h3>
+<p>React, Rxjs, mocha, enzyme, lodash/fp, recompose</p>
+<hr />
+<h2 id="fullstack-trading-bot-for-computer-game-market">Fullstack: Trading bot for computer game market</h2>
+<h3 id="project-description-7">Project description</h3>
+<p>Project allows customer to develop rules for buying preferred items from game market and sell them with income. Project is based on RESTful client-server architecture and provides 24/7 availability. Deployed in docker container on Amazon Beanstalk and on Heroku dyno instances.</p>
+<h3 id="customer-7">Customer</h3>
+<p>European customer</p>
+<h3 id="involvement-duration-7">Involvement Duration</h3>
+<p>4 months</p>
+<h3 id="project-role-7">Project role</h3>
+<p>Developer</p>
+<h3 id="responsibilities-7">Responsibilities</h3>
+<p>Developing, Requirements gathering, Product support</p>
+<h3 id="project-team-size-7">Project Team Size</h3>
+<p>1</p>
+<h3 id="tools-technologies-7">Tools &amp; Technologies</h3>
+<p>MERN stack: MongoDB, Express.js, React/Redux, Node.js, Mongoose.js, Jasmine/Chai, Webpack, Babel, Winston, jwt.io, immutable.js, eslint, pm2, supertest, HTML5, CSS5, Docker, AWS Beanstalk, Heroku.</p>
+<hr />
+<h2 id="backend-ordering-service-for-dry-cleaners">Backend: Ordering service for dry-cleaner’s</h2>
+<h3 id="project-description-8">Project description</h3>
+<p>RESTful back-end for mobile app. Provides ordering services for cloth cleaning. App includes management system of clients and orders. App integrated with social networks (facebook) and allows users to easily order the customer services.</p>
+<h3 id="customer-8">Customer</h3>
+<p>US</p>
+<h3 id="involvement-duration-8">Involvement Duration</h3>
+<p>2 months</p>
+<h3 id="project-role-8">Project role</h3>
+<p>Developer</p>
+<h3 id="responsibilities-8">Responsibilities</h3>
+<p>Developing, Requirements gathering, Deploying</p>
+<h3 id="project-team-size-8">Project Team Size</h3>
+<p>3 team members</p>
+<h3 id="tools-technologies-8">Tools &amp; Technologies</h3>
+<p>MongoDB, Express.js, Node.js, Mongoose.js, Jasmine, Travis CI, jwt.io, Winston, Facebook api</p>
+<hr />
+<h2 id="embedded-firmware-encrypting-desktop-app">Embedded: Firmware encrypting desktop app</h2>
+<h3 id="project-description-9">Project description</h3>
+<p>Desktop application for microcontroller firmware DES/3DES/AES encrypting. Includes graphical user interface for adjusting settings and manual results correction. Allows easily integrate app with other customer’s company solutions and products.</p>
+<h3 id="customer-9">Customer</h3>
+<p>Ukrainian company</p>
+<h3 id="involvement-duration-9">Involvement Duration</h3>
+<p>2 months</p>
+<h3 id="project-role-9">Project role</h3>
+<p>Developer</p>
+<h3 id="responsibilities-9">Responsibilities</h3>
+<p>GUI development, Covering codebase by unit and integration tests</p>
+<h3 id="project-team-size-9">Project Team Size</h3>
+<p>4 team members</p>
+<h3 id="tools-technologies-9">Tools &amp; Technologies</h3>
+<p>Java, JavaFX, JUnit, Maven, C, Cmake.</p>
+<hr />
+<h2 id="embedded-bootloader-library-for-encrypted-firmware">Embedded: Bootloader library for encrypted firmware</h2>
+<h3 id="project-description-10">Project description</h3>
+<p>Bootloader for Atmel/Microchip microcontroller platforms. Allows sharing encrypted firmware via internet or SD flash card for secure update.</p>
+<h3 id="customer-10">Customer</h3>
+<p>Ukrainian company</p>
+<h3 id="involvement-duration-10">Involvement Duration</h3>
+<p>3 months</p>
+<h3 id="project-role-10">Project role</h3>
+<p>Developer</p>
+<h3 id="responsibilities-10">Responsibilities</h3>
+<p>Developing, Requirements gathering</p>
+<h3 id="project-team-size-10">Project Team Size</h3>
+<p>3 team members</p>
+<h3 id="tools-technologies-10">Tools &amp; Technologies</h3>
+<p>Atmel SDK, Microchip SDK, C, Cmake</p>
+<hr />
+<h2 id="embedded-frontend-iot-embedded-module">Embedded, Frontend: IoT embedded module</h2>
+<h3 id="project-description-11">Project description</h3>
+<p>Wi-fi based hardware module with embedded server that allows users to control host device via web-interface. Client-side interface is developed with a flexible architecture and can be easily adjusted for concrete solution. Firmware with mobile-first web-interface allows customer to integrate module in various end-products.</p>
+<h3 id="customer-11">Customer</h3>
+<p>Ukrainian company</p>
+<h3 id="involvement-duration-11">Involvement Duration</h3>
+<p>4 months</p>
+<h3 id="project-role-11">Project role</h3>
+<p>Developer</p>
+<h3 id="responsibilities-11">Responsibilities</h3>
+<p>Developing, Requirements gathering</p>
+<h3 id="project-team-size-11">Project Team Size</h3>
+<p>4 team members</p>
+<h3 id="tools-technologies-11">Tools &amp; Technologies</h3>
+<p>Lua, C, Javascript, HTML, CSS, Bootstrap.</p>
+<hr />
+<h2 id="embedded-usb-currency-checker-desktop-app-for-adjusting">Embedded: USB currency checker, desktop app for adjusting</h2>
+<h3 id="project-description-12">Project description</h3>
+<p>Firmware for embeddable currency checker, which can be connected as USB device to linux-based systems. Project includes desktop app for adjusting, firmware updating, browsing work logs. Also project includes custom USB drivers based on open-source libusb library.</p>
+<h3 id="customer-12">Customer</h3>
+<p>Ukrainian company</p>
+<h3 id="involvement-duration-12">Involvement Duration</h3>
+<p>6 months</p>
+<h3 id="project-role-12">Project role</h3>
+<p>Developer</p>
+<h3 id="responsibilities-12">Responsibilities</h3>
+<p>Developing, custom USB drivers developing</p>
+<h3 id="project-team-size-12">Project Team Size</h3>
+<p>4 team members</p>
+<h3 id="tools-technologies-12">Tools &amp; Technologies</h3>
+<p>Atmel SDK, C, Cmake, Assembler, libusb, Java, Java FX, Maven, JUnit.</p>
+<hr />
 </body>
 </html>
