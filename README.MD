@@ -1,7 +1,7 @@
 # Artem Polisskyi
 
 ## About me
-Software Engineer, 27 y.o.
+Software Engineer, 28 y.o.
 
 education: bachelor of applied mathematics
 
@@ -37,13 +37,13 @@ I have understanding of software engineering principles and concepts, OOP/OOD, v
 ## Frontend: IoT access control system
 
 **Description**
-:   UI for access control system. Allows user to define his house structure, place IoT devices on the house scheme and manage access rights for 3rd party people to his home devices.
+:   UI for access control system. Allows user to define his house structure, place IoT devices on the house scheme and manage access rights for 3rd party users. The most interesting and complex part of the project is in "2D editor on canvas" architecture.   
 
 **Customer**
 :   Belgium
 
 **Duration**
-:   3 months (and continue)
+:   4 months
 
 **Project role**
 :   Developer, Teamlead
